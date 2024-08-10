@@ -41,7 +41,7 @@ Connect an Android device or start an emulator, then run the app from Android St
 ## Libraries Used
 - **Firebase Auth:** Used for user authentication.
 - **Firebase Firestore:** Remote database for storing trip, expense, and packing list data.
-- **Room:** Local database for storing journal entries.
+- **Room:** Local database for storing diary entries.
 - **Navigation Component:** Manages navigation between different screens.
 - **Google Play Services Location:** Retrieves the current location of the device and integrates with maps.
 - **Coroutines & Dispatchers:** Manages asynchronous operations for smoother UI performance.
