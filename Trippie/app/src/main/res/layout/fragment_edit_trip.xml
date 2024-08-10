@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/header_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_your_trip"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:shadowColor="@color/black"
+                android:shadowRadius="2"
+                android:padding="20dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_et_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- TextInputEditText for country -->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/country_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_country" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/city_et_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- TextInputEditText for city -->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/city_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_city" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- "Choose Dates" View -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/date_selection_layout"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/start_date_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/appColor"
+                    android:text="@string/start_date" />
+
+                <Button
+                    android:id="@+id/end_date_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/appColor"
+                    android:text="@string/end_date" />
+
+            </LinearLayout>
+            <!-- End of "Choose Dates" View -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description_et_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <!-- TextInputEditText for description -->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_description" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/result_image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/add_image"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/deleteImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/delete_image"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/appColor"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/activities_header_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_activities_for_this_trip"
+                android:textSize="17sp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/activities_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/activities_here"
+                android:inputType="textMultiLine"
+                android:textSize="13sp"
+                android:minLines="5"
+                android:gravity="start|top"
+                android:scrollbars="vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/hotel_header_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel_details"
+                android:textSize="17sp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/hotel_details_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hotel_details_here"
+                android:textSize="13sp"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="start|top"
+                android:scrollbars="vertical"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/appColor"
+                android:text="@string/save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

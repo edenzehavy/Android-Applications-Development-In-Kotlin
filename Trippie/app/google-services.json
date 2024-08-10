@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585740402238",
+    "project_id": "trippie-a6800",
+    "storage_bucket": "trippie-a6800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585740402238:android:4f7521a34cfbc93def5b6f",
+        "android_client_info": {
+          "package_name": "com.example.trippie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoveYQ0n8d7kU49ovd_sISjMoZr7asuc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

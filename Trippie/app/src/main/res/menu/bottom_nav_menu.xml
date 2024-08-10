@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tripListFragment"
+        android:icon="@drawable/triplist_icon"
+        android:title="@string/trips" />
+    <item
+        android:id="@+id/diaryListFragment"
+        android:icon="@drawable/diary_icon"
+        android:title="@string/diaries" />
+    <item
+        android:id="@+id/checklistFragment"
+        android:icon="@drawable/checklist_icon"
+        android:title="@string/checklist" />
+    <item
+        android:id="@+id/expensesFragment"
+        android:icon="@drawable/expenses_icon"
+        android:title="@string/expenses" />
+</menu>
