@@ -33,3 +33,20 @@ To run the Trippie app, follow these steps:
    ```bash
    git clone https://github.com/edenzehavy/Android-Applications-Development-In-Kotlin.git
    cd Trippie
+2. ## Open the Project in Android Studio:
+Open the project folder in Android Studio and allow it to sync and build.
+3. ## Run the Application:
+Connect an Android device or start an emulator, then run the app from Android Studio.
+
+## Libraries Used
+- **Firebase Auth:** Used for user authentication.
+- **Firebase Firestore:** Remote database for storing trip, expense, and packing list data.
+- **Room:** Local database for storing journal entries.
+- **Navigation Component:** Manages navigation between different screens.
+- **Google Play Services Location:** Retrieves the current location of the device and integrates with maps.
+- **Coroutines & Dispatchers:** Manages asynchronous operations for smoother UI performance.
+- **Glide:** Efficiently loads and caches images.
+
+## Collaborators
+- **Eden Zehavy**
+- **Rotem Haim**
