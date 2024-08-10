@@ -35,6 +35,7 @@ To run the Trippie app, follow these steps:
    cd Trippie
 2. ## Open the Project in Android Studio:
 Open the project folder in Android Studio and allow it to sync and build.
+
 3. ## Run the Application:
 Connect an Android device or start an emulator, then run the app from Android Studio.
 
